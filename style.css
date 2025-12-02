@@ -1,0 +1,112 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Body Center */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a, #2a2a2a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Box */
+.box {
+  width: 360px;
+  background: linear-gradient(145deg, #141414, #1f1f1f);
+  padding: 18px;
+  border-radius: 20px;
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.8),
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Frame (Display Area) */
+.frame {
+  background: #000;
+  padding: 18px;
+  border-radius: 12px;
+  border: 2px solid #00ffee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 32px;
+  color: #00ffee;
+  box-shadow: 
+    inset 0 0 15px rgba(0, 255, 238, 0.6),
+    0 0 15px rgba(0, 255, 238, 0.4);
+}
+
+/* Digits */
+.hrs, .min, .sec, .m-s {
+  min-width: 42px;
+  text-align: center;
+}
+
+/* Blinking Colon */
+.colon {
+  opacity: 0.85;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.2; }
+}
+
+/* Buttons Panel */
+.butons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Buttons */
+.butons button {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+/* Start Button */
+.start {
+  background: #00ff88;
+  box-shadow: 0 0 15px #00ff8855;
+}
+.start:hover {
+  background: #00cc6e;
+}
+
+/* Stop Button */
+.stop {
+  background: #ff1144;
+  color: white;
+  box-shadow: 0 0 15px #ff114455;
+}
+.stop:hover {
+  background: #cc0e36;
+}
+
+/* Reset Button */
+.reset {
+  background: #0099ff;
+  color: white;
+  box-shadow: 0 0 15px #0099ff55;
+}
+.reset:hover {
+  background: #0077cc;
+}
